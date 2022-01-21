@@ -1,0 +1,35 @@
+{% extends 'Box/base.html' %}
+{% load static %}
+
+{% block content %}
+    <section class="boxes">
+        <div class="container">
+          <div class="row">
+            
+              <div class="col-6">
+                <img class="chests float-right" src="{% static 'Box/img/closed.png' %}">
+              </div>
+
+              <div class="col-6">
+                <img class="chests float-left" src="{% static 'Box/img/closed.png' %}">
+              </div>
+
+              <div class="col-6">
+                <img class="chests float-right" src="{% static 'Box/img/closed.png' %}">
+              </div>
+
+              <div class="col-6">
+                <img class="chests float-left" src="{% static 'Box/img/closed.png' %}">
+              </div>
+
+              <div class="col-6">
+                <img class="chests float-right" src="{% static 'Box/img/closed.png' %}">
+              </div>
+
+              <div class="col-6">
+                <img class="chests float-left" src="{% static 'Box/img/closed.png' %}">
+              </div>
+          </div>
+        </div>
+    </section>
+{% endblock %}

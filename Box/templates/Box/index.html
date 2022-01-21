@@ -1,0 +1,55 @@
+{% extends 'Box/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="header-img">
+              <center>
+                <img class="main-img" src="{% static 'Box/img/main.png' %}">
+              </center>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <form>
+              <div class="form-group">
+                <input type="tel" required class="form-control user_phone_number" id="user_phone_number" aria-describedby="phone_number" placeholder="Enter your phone number">
+              </div>
+        
+              <button onclick="window.location.href='{% url 'PlayChests' %}'" class="btn btn-success play-btn-cstm">PLAY NOW</button>
+            </form>
+        </div>
+
+        <p class="text-center table-heading-txt">Latest Winners</p>
+        <div class="row justify-content-center">
+            <table class="table table-bordered table-wdth-cstm table-striped table-light">
+              <thead>
+                <tr>
+                  <th scope="col">Date</th>
+                  <th scope="col">Name</th>
+                  <th scope="col">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>21/05/2021</td>
+                  <td>John Doe</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+              
+                  <td>21/05/2021</td>
+                  <td>John Doe</td>
+                  <td>1000</td>
+                </tr>
+                <tr>
+                  <td>21/05/2021</td>
+                  <td>John Doe</td>
+                  <td>1000</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
